@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Course Registration</title>
+</head>
+<body>
+  <h2>Select Courses:</h2>
+  <form action="process_form.php" method="post" enctype="multipart/form-data">
+    <label for="java">
+      <input type="checkbox" id="java" name="courses[]" value="java"> Java
+    </label>
+    <br>
+    <label for="sql">
+      <input type="checkbox" id="sql" name="courses[]" value="sql"> SQL
+    </label>
+    <br>
+    <label for="html">
+      <input type="checkbox" id="html" name="courses[]" value="html"> HTML
+    </label>
+    <br>
+
+    <h2>Additional Information:</h2>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    <br>
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+    <br>
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file" required>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
